@@ -1,0 +1,65 @@
+/*loader spin*/
+#loader{
+    height:200px;
+    width:200px;
+    position: absolute;
+    border-radius: 50%;
+    margin: auto;
+    right:0;
+    left:0;
+    top:0;
+    bottom: 0;
+    border-top: 26px solid rgb(87, 84, 84);
+    border-bottom: 26px solid rgb(245, 235, 235);
+    border-right: 26px solid rgb(245, 235, 235);
+    border-left: 26px solid rgb(245, 235, 235);
+    animation: loader 2s linear infinite;
+}
+body{
+    background-color: rgb(39, 39, 39);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin:0;
+    padding:0;
+}
+@keyframes loader{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/*content load*/
+#content{
+    display: none;
+    animation: showContent 2s;
+    min-height:100vh;
+    margin:0;
+    padding:0;
+    width:100%;
+}
+@keyframes showContent {
+    from {opacity:0; bottom:-100px;}
+    to{opacity: 1; bottom: 0px}
+}
+@media screen and (max-width:900px){
+    #loader{
+        width: 150px;
+        height: 150px;
+    }
+}
+@media screen and (max-width:768px){
+    #loader{
+        width: 120px;
+        height: 120px;
+    }
+}
+@media screen and (max-width:600px){
+    #loader{
+        width: 100px;
+        height: 100px;
+    }
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div id="centered-body">
+            <!--first row-->
+            <div id="nav-head">
+                <div id="left-nav"><p>Fatima Davies</p></div>
+                <div id="right-nav">
+                    <ul>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">PORTFOLIO</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--second row-->
+            <div id="body-centered">
+                <div id="social-col">
+                    <i class="fa fa-facebook">facebook</i>
+                    <i class="fa fa-twitter">twitter</i>
+                    <i class="fa fa-instagram">instagram</i>
+                </div>
+                <div id="image">
+                </div>
+                <div id="prof-title">
+                    <h3>FRONT END <br/>DEVELOPER</h3>
+                    <h3>FRONT END <br/>DEVELOPER</h3>
+                    <h3>FRONT END <br/>DEVELOPER</h3>
+                    <h3>FRONT END <br/>DEVELOPER</h3>
+                    <h3>FRONT END <br/>DEVELOPER</h3>
+                    <h3>FRONT END <br/>DEVELOPER</h3>
+                    <h3>FRONT END <br/>DEVELOPER</h3>
+                    <h3>FRONT END <br/>DEVELOPER</h3>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script>
+                var keepYourPromise=true;
+        var thePromise=new Promise(function(resolve, reject){
+            if (keepYourPromise){
+                resolve("promise is fulfilled");
+            }
+            else{
+                reject("promise rejected");
+            }
+            
+        });
+        setInterval(thePromise, 10000);
+        console.log(thePromise);
+        let images=[
+            "images/my-photo.jpg",
+            "images/littleangel.jpg",
+            "images/ride.jpg",
+            "images/htmllogo.png"
+        ]
+        let aboutMe=[
+            "I am fatimah Davies a web developer.",
+            "i am competent",
+            "I am fatimah Davies a web developer."
+
+        ]
+
+        var i=0;
+        function randomImages(){
+            document.getElementById("image").style.backgroundImage="url(" + images[i] + ")";
+            i++;
+            if (i==images.length){
+                i=0;
+            }
+        };
+        setInterval(randomImages, 5000);
+
+        
+        function showRandomAbout(){
+            var i=0;
+            var randomDescription=(aboutMe[i]);
+            i++;
+            document.getElementById("prof-title").innerHTML=aboutMe[i];
+            if (i==aboutMe.length){
+                i=0;
+            }
+        };
+     
+        setInterval(showRandomAbout, 2000);
+
+
+        
+    </script>
+</html>
+
+
+
+
+body{
+    background-color:rgba(34, 32, 32, 0.9);
+    padding:70px;
+}
+#centered-body{
+    background-color:rgba(14, 13, 13, 0.9); 
+    margin:auto;  
+    vertical-align: center;
+    height:500px;
+    color:#ffffff;
+    font-size:25px;
+    padding:15px;
+}
+#nav-head{
+    position: fixed;
+}
+#left-nav{
+    width:40%;
+}
+#right-nav{
+    padding-left:170px;
+}
+#nav-head, #nav-head #right-nav ul{
+    display: flex;
+    flex-direction:row;
+}
+#nav-head #right-nav ul li{
+    list-style-type: none;
+}
+#nav-head #right-nav ul li a{
+    text-decoration: none;
+    color:#ffffff;
+    padding-left:30px;
+}
+
+#body-centered{
+    display: flex;
+    flex-direction: row;
+    padding-top:40px;
+}
+#social-col{
+    display: flex;
+    flex-direction: column;
+    line-height:70px;
+    width:50px;
+}
+#image{
+    background-color: #e6e4e4;
+    border-radius: 50%;
+    height:300px;
+    width:300px;
+    background-image: url("images/my-photo.jpg");
+    padding:30px;
+    padding-left:70px;
+    background-size: cover;
+}
+#prof-title{
+    margin-left:-60px;
+    padding-top:50px;
+    font-size:40px;
+    letter-spacing: 8px;
+}

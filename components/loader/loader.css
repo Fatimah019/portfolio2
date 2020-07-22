@@ -1,0 +1,49 @@
+#loader{
+    margin:10% 0px 10% 0px;
+    height:200px;
+    width:200px;
+    position: absolute;
+    border-radius: 50%;
+    border-top: 26px solid blue;
+    border-bottom: 26px solid rgb(245, 235, 235);
+    border-right: 26px solid rgb(245, 235, 235);
+    border-left: 26px solid rgb(245, 235, 235);
+    animation: loader 2s linear infinite;
+}
+
+/* @keyframes loader{
+    from{opacity: 0;}
+    to{opacity: 1;}
+} */
+@keyframes loader{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+#content{
+    display: none;
+    text-align: center;
+    animation: showContent 2s;
+}
+body{
+    background-image: url("images/my-photo.jpg");
+    min-height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-color: red;
+    animation: showContent 6s;
+}
+@keyframes showContent {
+    from {opacity:0; bottom:-100px;}
+    to{opacity: 1; bottom: 0px}
+    /* 50%{
+        transform: translateY(0px)
+    }
+    100%{
+        transform: translateY(200px)
+    } */
+}
