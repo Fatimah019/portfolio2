@@ -11,7 +11,7 @@
 
     toggle.addEventListener('click', ()=>{
         nav.style.visibility = 'visible'
-        box.style.height= '100vh'
+        box.style.height= '60vh'
         links.forEach(li=>{
             li.style.top = '0';
             // content.style.visibility = 'hidden';

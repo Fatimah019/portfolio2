@@ -114,6 +114,9 @@ ul li{
 .auto{
     margin: auto;
 }
+html, body{
+    height:100%;
+}
 .body{
     background: rgba(0,0,0,0.5);
 }

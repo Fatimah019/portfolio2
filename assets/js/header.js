@@ -12,10 +12,10 @@
 
     toggle.addEventListener('click', ()=>{
         nav.style.visibility = 'visible'
-        nav.style.transition = 'opacity 1s'
+        nav.style.transition = 'opacity 4s'
         mainContent.style.visibility = 'hidden'
         bodyCo.style.backgroundImage = "none"
-        box.style.height= '100vh'
+        box.style.height= '60vh'
         links.forEach(li=>{
             li.style.top = '0';
             li.style.textAlign = 'center';

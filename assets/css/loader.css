@@ -17,9 +17,10 @@
 }
 body{
     background-color: rgb(39, 39, 39);
-    min-height: 100vh;
+    min-height: 60vh;
     background-size: cover;
     background-position: 50% 50%;
+    background-repeat: no-repeat;
     margin:0;
     padding:0;
 }
@@ -36,7 +37,6 @@ body{
 #content{
     display: none;
     animation: showContent 2s;
-    min-height:100vh;
     margin:0;
     padding:0;
     width:100%;
