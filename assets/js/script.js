@@ -8,14 +8,14 @@ function showAbout(){
     about.href = "components/about/about.html"
 }
 function showPro1(){
-    projectOne.href = "daviesfatimah.netlify.app"
+    projectOne.href = "https://daviesfatimah.netlify.app"
 }
 function showPro2(){
-    projectTwp.href = "foxtrot-schoolfinder.herokuapp.com"
+    projectTwo.href = "http://foxtrot-schoolfinder.herokuapp.com/"
 }
 function showPro3(){
-    projectThree.href = "find-gift.herokuapp.com"
+    projectThree.href = "http://find-gift.herokuapp.com/"
 }
 function showPro4(){
-    projectFour.href = "termsintech.netlify.app"
+    projectFour.href = "http://termsintech.netlify.app/"
 }
