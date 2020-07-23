@@ -20,6 +20,9 @@
         #content{
             min-height:100%;
         }
+        #about:active{
+
+        }
     </style>
     <body onload="loadContent()" id="body">
         <!--loader/spinner-->
@@ -37,7 +40,7 @@
             <nav>
                 <span id="close"><i class="fa fa-times"></i></span>
                 <ul class="links text-center auto" style="margin-top:150px; font-size:40px;">
-                    <li class="active"><a href="#">About</a></li>
+                    <li class="active"><a href="" id="about" onclick="showAbout()">About</a></li>
                     <li><a href="#">Works</a></li>
                     <li><a href="#">Contact</a></li>
                     <div class="socials flex-row space-evenly">
@@ -58,10 +61,10 @@
             <!--work links and contact-->
             <div class="work-and-contact flex-row">
                 <div class="col-8 works auto">
-                    <div href="#"><a href="#"><sup>01</sup><br/>Project one</a></div>
-                    <div href="#"><a href="#"><sup>02</sup><br/>Project two</a></div>
-                    <div href="#"><a href="#"><sup>03</sup><br/>Project three</a></div>
-                    <div href="#"><a href="#"><sup>04</sup><br/>Project four</a></div>
+                    <div href="#"><a href="" id="proj-1"><sup>01</sup><br/>Project one</a></div>
+                    <div href="#"><a href="" id="proj-2"><sup>02</sup><br/>Project two</a></div>
+                    <div href="#"><a href="" id="proj-3"><sup>03</sup><br/>Project three</a></div>
+                    <div href="#"><a href="" id="proj-4"><sup>04</sup><br/>Project four</a></div>
                     <!-- <div href="#"><a href="#"><sup>05</sup><br/>Project five</a></div> -->
                 </div>
                 <div class="col-2 contact auto"><p>Fatimah Designs <a href="#" style="color:#fff"><i class="fa fa-envelope"></i></a></p></div>

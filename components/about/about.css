@@ -1,0 +1,29 @@
+.about-circular{
+    padding:26px;
+    font-size: 30px;
+    background-color: red;
+    
+}
+.about-circular p{
+shape-outside: circle(50%);
+}
+h3{
+    font-size: 40px Monaco, MonoSpace;
+    transform-origin: bottom center;
+    width: 20px;
+    height:200px;
+    left:0;
+    top:0;
+}
+/* .char1{
+    transform:rotate(6deg);
+}
+.char2{
+    transform: rotate(12deg);
+}
+.char3{
+    transform:rotate(18deg);
+}
+.char4{
+    transform: rotate(24deg);
+} */
